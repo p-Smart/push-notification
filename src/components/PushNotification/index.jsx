@@ -92,7 +92,7 @@ const PushNotification = ({setToken}) => {
             })
             .catch((error) => {
                 console.error('Error requesting notification permission:', error)
-                toast.error(error.message)
+                // toast.error(error.message)
             })
     }    
 
