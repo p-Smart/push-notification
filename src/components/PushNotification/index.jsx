@@ -4,8 +4,10 @@ import { toast } from "react-hot-toast"
 import { firebaseCloudMessaging} from "./firebase"
 import { useEffect } from "react"
 import { useNotificationContext } from "@/contexts/notificationContext"
-import Image from "next/image"
 import { useRouter } from "next/router"
+import { Inter } from "next/font/google"
+import styles from '@/styles/Home.module.css'
+const inter = Inter({ subsets: ['latin'] })
 
 
 const PushNotification = ({setToken}) => {

@@ -14,7 +14,12 @@ const App = ({ Component, pageProps }) => {
     value={{notificationToken, tokenLoading, setTokenLoading}}
     >
     <Component {...pageProps} />
-    <Toaster />
+    <Toaster 
+     toastOptions={{style: {
+      border: '1px solid rgba(var(--callout-border-rgb), 0.3)',
+      backgroundColor: 'rgba(var(--callout-rgb))'
+     }}}
+    />
     <PushNotification setToken={setNotificationToken} />
     </NotificationContext.Provider>
   )
